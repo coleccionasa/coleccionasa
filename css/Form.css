@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f9fa;
+    margin-bottom: 60px; /* Ajusta este valor según la altura de tu footer */
+  }
+  
+  .navbar {
+    background: rgb(243, 123, 62);
+    background: linear-gradient(90deg, rgba(243, 123, 62, 1) 0%, rgba(166, 0, 59, 1) 63%);
+    font-family: system-ui, - 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+  
+  .navbar-dark .navbar-toggler {
+    border-color: #ffffff;
+  }
+  
+  .navbar-dark .navbar-toggler:hover,
+  .navbar-dark .navbar-toggler:focus {
+    background-color: #ffffff;
+  }
+  
+  .container-fluid {
+    margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }

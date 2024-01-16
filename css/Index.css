@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa;
+    margin-bottom: 60px;
+  }
+  
+  .navbar {
+ 
+    background: linear-gradient(90deg, rgba(243, 123, 62, 1) 0%, rgba(166, 0, 59, 1) 63%);
+    font-family: system-ui, - 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   
+  }
+  .navbar1{
+    max-width: 8em;
+    background-color: rgb(237, 237, 237);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea la lista a la izquierda */
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: blue;
+  }
+  
+  #botonera {
+    background-color: none;
+    padding-top: 5px; /* Añade un relleno si deseas */
+  }
+
+  
+.btn-degradado {
+  background: linear-gradient(90deg, rgba(243, 123, 62, 1) 10%, rgba(166, 0, 59, 1) 96%);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-degradado:hover {
+background: linear-gradient(90deg, rgba(166, 0, 59, 1) 10%, rgba(243, 123, 62, 1) 96%);
+filter: brightness(90%);
+color: white;
+}
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+
+  
+
+  
+  /* ... (otros estilos) */
+  .card {
+    margin: 0.4em;
+    height: 25em;
+    overflow: hidden;
+    transition: transform 0.5s ease, height 0.5s ease; /* Agregamos una transición para la animación de zoom y altura */
+  }
+
+  .card-img-top {
+   max-height: 15em;;
+    object-fit: cover;
+  }
+
+  .card:hover {
+    transform: scale(1.1) translateY(-5%); /* Zoom in y traslación al hacer hover */
+    height: auto; /* Altura automática al hacer hover */
+  }
+
+  .card-body {
+    height: 30%;
+    overflow: hidden;
+  }
+
+  .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: -webkit-line-clamp 0.5s ease;
+  }
+
+  .card:hover .card-text {
+    -webkit-line-clamp: unset;
+  }
+
+  #final{
+    margin-bottom: 6em;
+  }
