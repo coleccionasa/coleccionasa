@@ -1,15 +1,27 @@
 body {
     background-color: #f8f9fa;
     margin-bottom: 60px;
-  }
-  
-  .navbar {
- 
-    background: linear-gradient(90deg, rgba(243, 123, 62, 1) 0%, rgba(166, 0, 59, 1) 63%);
-    font-family: system-ui, - 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa; /* Color de fondo predeterminado */
+    background-image: url('https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
 
-   
-  }
+.container-fluid {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%; /* Cambiado a un 80% del ancho de la pantalla */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+.navbar {
+  background: linear-gradient(90deg, rgba(243, 123, 62, 1) 0%, rgba(166, 0, 59, 1) 63%);
+  font-family: system-ui, - 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 20px;
+}
+
   .navbar1{
     max-width: 8em;
     background-color: rgb(237, 237, 237);
@@ -52,17 +64,19 @@ filter: brightness(90%);
 color: white;
 }
   
-  .footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
 
+#final {
+  margin-bottom: 6em;
+}
   
 
   
