@@ -68,6 +68,42 @@
 
 
 <body>
+  <script>
+
+
+    function mensajeAlert(e) {
+      e.preventDefault();
+
+      let contenedorTarjeta = e.target.closest('.col-md-3');
+     
+      const miNodoAlert = document.createElement('div');
+      miNodoAlert.style.position = 'absolute';
+      miNodoAlert.style.top = '0';
+      miNodoAlert.style.left = '0';
+      miNodoAlert.style.width = '100%';
+      miNodoAlert.style.height = '100%';
+      miNodoAlert.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      miNodoAlert.style.color = 'white';
+      miNodoAlert.style.display = 'flex';
+      miNodoAlert.style.justifyContent = 'center';
+      miNodoAlert.style.alignItems = 'center';
+      miNodoAlert.style.textAlign = 'center';
+
+      const miNodoTituloAlert = document.createElement('h5');
+      miNodoTituloAlert.textContent = 'Esta web aún es un prototipo. Disculpe las molestias.';
+      miNodoAlert.appendChild(miNodoTituloAlert);
+
+      contenedorTarjeta.style.position = 'relative';
+      contenedorTarjeta.appendChild(miNodoAlert);
+
+      setTimeout(() => {
+        contenedorTarjeta.removeChild(miNodoAlert);
+      }, 3000);
+
+    }
+</script>
+
+  
 
   <div class="container-fluid">
 
@@ -89,7 +125,7 @@
                 <p class="card-text">Precio: 80€</p>
               </div>
               <div class="col-sm-6">
-                <a href="" class="btn btn-danger btn-block">Añadir</a>
+                <a href="" class="btn btn-danger btn-block" onclick="mensajeAlert(event)">Añadir</a>
               </div>
             </div>
           </div>
@@ -111,7 +147,7 @@
                 <p class="card-text">Precio: 8€</p>
               </div>
               <div class="col-sm-6  ">
-                <a href="" class="btn btn-danger btn-block">Añadir</a>
+                <a href="" class="btn btn-danger btn-block"onclick="mensajeAlert(event)">Añadir</a>
               </div>
             </div>
           </div>
@@ -140,7 +176,7 @@
                 <p class="card-text">Precio: 157,25€</p>
               </div>
               <div class="col-sm-6  ">
-                <a href="" class="btn btn-danger btn-block">Añadir</a>
+                <a href="" class="btn btn-danger btn-block"onclick="mensajeAlert(event)">Añadir</a>
               </div>
             </div>
           </div>
@@ -166,7 +202,7 @@
                 <p class="card-text">Precio: 8€</p>
               </div>
               <div class="col-sm-6  ">
-                <a href="" class="btn btn-danger btn-block">Añadir</a>
+                <a href="" class="btn btn-danger btn-block"onclick="mensajeAlert(event)">Añadir</a>
               </div>
             </div>
           </div>
@@ -206,7 +242,7 @@
                 <p class="card-text">Precio: 8€</p>
               </div>
               <div class="col-sm-6  ">
-                <a href="" class="btn btn-danger btn-block">Añadir</a>
+                <a href="" class="btn btn-danger btn-block" onclick="mensajeAlert(event)">Añadir</a>
               </div>
             </div>
           </div>
