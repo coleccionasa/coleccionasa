@@ -1,6 +1,23 @@
 t<!DOCTYPE html>
 <html lang="es">
 <style>
+     body {
+        margin-bottom: 60px;
+        background-color: #f8f9fa; 
+        background-image: url('https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg');  
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container-fluid {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 80%;
+        margin: 0 auto;
+    }
     .custom-color {
         color: #A6003B;
     }
@@ -70,6 +87,7 @@ t<!DOCTYPE html>
 </header>
 
 <body>
+<div class="container-fluid">
     <div class="container mt-4" id="idcontacto">
         <h1 class="text-center mb-4">¡Contacta con nosotros!</h1>
         <div class="row">
@@ -108,6 +126,7 @@ t<!DOCTYPE html>
             <button type="submit" class="btn btn-custom" id="btnSubmit">Enviar</button>
         </form>
     </div>
+  </div>      
 
     <script>
         function mensajeAlert(e) {
