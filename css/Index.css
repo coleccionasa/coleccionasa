@@ -1,5 +1,6 @@
+/*Index.css*/
 body {
-    background-color: #f8f9fa;
+
     margin-bottom: 60px;
     background-color: #f8f9fa; /* Color de fondo predeterminado */
     background-image: url('https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg'); /* Ruta a tu imagen de fondo */
@@ -9,11 +10,12 @@ body {
 }
 
 .container-fluid {
-  background-color: #ffffff;
+  background:rgba(239, 239, 239, 0.434);
+  
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 80%; /* Cambiado a un 80% del ancho de la pantalla */
+  max-width: 90%; /* Cambiado a un 80% del ancho de la pantalla */
     margin: 0 auto; /* Centrar el contenedor horizontalmente */
 }
 .navbar {
@@ -81,22 +83,49 @@ color: white;
 
   
   /* ... (otros estilos) */
-  .card {
-    margin: 0.4em;
-    height: 25em;
-    overflow: hidden;
-    transition: transform 0.5s ease, height 0.5s ease; /* Agregamos una transición para la animación de zoom y altura */
+  .row {
+    display: flex;
+    justify-content: space-around; /* Cambiado de space-between a space-around */
+    flex-wrap: wrap;
+    margin: -15px; /* Ajusta el margen negativo para compensar el espacio entre las tarjetas */
   }
 
+  
+.card img {
+  width: 100%;
+  height: auto;
+  border: 5px solid white;
+}
+
+  
+  .card {
+    flex: 0 0 calc(30% - 30px); /* Ajustado según el diseño deseado (3 columnas) */
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Ajustado el tiempo de transición */
+  }
   .card-img-top {
-   max-height: 15em;;
+   max-height: 105em;;
     object-fit: cover;
+ 
   }
 
   .card:hover {
-    transform: scale(1.1) translateY(-5%); /* Zoom in y traslación al hacer hover */
-    height: auto; /* Altura automática al hacer hover */
+    transform: translate(-10px, -20px); /* Desplaza 10px hacia la derecha y 20px hacia abajo */
+
+
   }
+  
+  .card:hover img {
+  
+    filter: saturate(150%); /* Aumenta la saturación */
+
+
+  
+
+    
+  }
+  
 
   .card-body {
     height: 30%;
@@ -108,7 +137,7 @@ color: white;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    transition: -webkit-line-clamp 0.5s ease;
+    transition: -webkit-line-clamp 0.1s ease;
   }
 
   .card:hover .card-text {
@@ -118,3 +147,141 @@ color: white;
   #final{
     margin-bottom: 6em;
   }
+
+/* Estilos adicionales para el Carousel */
+.carousel-item img {
+  height: 100vh;
+  object-fit: scale-down;
+
+}
+
+#productCarousel {
+  max-width: 70%; /* Adjust the maximum width of the carousel container */
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+#productCarousel .card:hover {
+  /* Comentario: Quitar las propiedades de transform y altura para eliminar el efecto de zoom */
+  transform: none;
+  height: auto;
+}
+
+#productCarousel .card{
+  
+  /* Comentario: Quitar las propiedades de transform y altura para eliminar el efecto de zoom */
+  transform: none;
+  height: auto;
+}
+#productCarousel .card img{
+  
+border: 5px solid white;
+}
+
+#productCarousel .carousel-item {
+ max-height: 400px; /* Adjust the height of the carousel items as needed */
+}
+
+#productCarousel .carousel-item img {
+  /* Ajusta el ancho máximo de las imágenes de las diapositivas al 100% del contenedor */
+  max-height: 200px; /* Permite que la altura se ajuste automáticamente según el ancho */
+  display: inline;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 5px;
+  background:url('https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705449600&semt=sph');
+}
+
+#productCarousel .carousel-control-prev-icon,
+#productCarousel .carousel-control-next-icon {
+  background-color: red; /* Reemplaza 'tu_color_deseado' con el color que prefieras */
+  border-radius: 10px;
+}
+
+/* Cambiar el color del contorno de las flechas del carrusel */
+#productCarousel .carousel-control-prev,
+#productCarousel .carousel-control-next {
+  color: black; /* Reemplaza 'tu_color_deseado' con el color que prefieras */
+}
+
+/* Cambiar el color al hacer hover sobre las flechas del carrusel */
+#productCarousel .carousel-control-prev:hover,
+#productCarousel .carousel-control-next:hover {
+  color: orange; /* Reemplaza 'tu_color_hover' con el color que prefieras al hacer hover */
+}
+
+/* Estilos para hacer el texto del Carousel más legible */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+  /* Ajustar el hover para dispositivos táctiles */
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+    height: auto;
+  }
+}
+
+.card-body {
+  height: 100%;
+}
+
+.card-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: -webkit-line-clamp 0.5s ease;
+}
+
+.card:hover .card-text {
+  -webkit-line-clamp: unset;
+}
+
+
+/*Hacer que el texto del index y condiciones sea responsive:*/
+/* Ajustar el texto para pantallas pequeñas */
+
+
+.navbar {
+  padding: 10px; /* Añadir espacio alrededor de la barra de navegación */
+}
+
+/* Ajustar el tamaño del texto según el ancho de la pantalla */
+@media only screen and (max-width: 767px) {
+  .navbar-brand {
+    font-size: 1.5em;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 5px 0;
+  }
+
+  #final {
+    margin-bottom: 3em;
+  }
+
+  .container-fluid {
+    padding: 10px;
+  }
+}
+
+/* Ajustar el tamaño del texto para pantallas muy pequeñas */
+@media only screen and (max-width: 479px) {
+  .navbar-brand {
+    font-size: 1.2em;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+}
