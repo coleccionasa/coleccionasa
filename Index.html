@@ -1,205 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        
-        <title>Coleccionasa</title>
-        <!-- Favicon-->
-  <link rel="icon" href="./imagenes/logo.png" type="image/png">
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-          <!-- Enlace al archivo de estilos CSS -->
-  <link rel="stylesheet" href="css/Index.css">
-    <!-- Agrega estos scripts en el encabezado de tu HTML -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
+<html lang="es">
+<style>
+    .text-custom {
+        color: #A6003B;
+    }
+</style>
 
-    <body>
-        <!-- Navigation-->
-       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/Index.css">
+    <title>Coleccionasa</title>
+
+    <!-- Agrega el enlace al favicon -->
+    <link rel="icon" href="./imagenes/logo.png" type="image/png">
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/Index.css">
+
+    <style>
+         body {
+        margin-bottom: 60px;
+        background-color: #f8f9fa;
+        /* Color de fondo predeterminado */
+        background-image: url('https://t3.ftcdn.net/jpg/05/85/86/44/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg');
+        /* Ruta a tu imagen de fondo */
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat;
+        /* Evita que la imagen de fondo se repita */
+        background-attachment: fixed;
+        /* Fija la imagen de fondo para que no se desplace con el contenido */
+    }
+
+    .container-fluid {
+        background-color:#f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 80%;
+        /* Cambiado a un 80% del ancho de la pantalla */
+        margin: 0 auto;
+        /* Centrar el contenedor horizontalmente */
+    }
+        :root {
+            --main-color: #A6003B;
+        }
+        header, footer {
+            background-color: var(--main-color);
+            color: white;
+        }
+        .feature-icon {
+            color: var(--main-color);
+            font-size: 3rem;
+        }
+        .feature-text {
+            font-size: 1.2rem;
+        }
+        .testimonial-quote {
+            font-style: italic;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+        }
+        .faq-answer {
+            padding: 10px;
+        }
+
+        #faqs {
+            margin-bottom: 50px;
+        } 
+        .banner {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-text {
+            flex: 1;
+        }
+        .banner-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #A6003B;
+        }
+        .banner-text p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .banner-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #A6003B;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .banner-button:hover {
+            background-color: #94002D;
+        }
+        
+    </style>
+</head>
+
 <header>
- 
-    <div class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="Tienda.html">
-          <img src="./imagenes/logo.png" alt="coleccionasa" width="100em"> Coleccionasa
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul  class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item" ><a  style="color: white;"  class="nav-link active" aria-current="page" href="Index.html">Inicio</a></li>
-           
-                <li class="nav-item dropdown">
-                    <a  style="color: white;" class="nav-link dropdown-toggle" id="navbarDropdown" href="Tienda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Tienda.html">Libros</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="Tienda2.html"> Vinilos</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="Tienda3.html">Barajas</a></li>
-                    </ul>
-                </li>
-
-                     <li class="nav-item"><a style="color: white;" class="nav-link" href="Contacto.html">Contacto</a></li>
-            </ul>
-
-        
-              </div>
-              
-        <div class="d-flex align-items-center">
-          <span class="ml-2 text-white">Síguenos en nuestra nueva cuenta de <a
-              href="https://www.instagram.com/coleccionasa/"><img src="./imagenes/ig.png" width="40em"
-                alt="Instagram Logo"></a></span>
-        </div>
-        
-      </div>
-      
-      <form class="d-flex">
-        <button class="btn btn-outline-dark" type="submit">
-            <i class="bi-cart-fill me-1"></i>
-            Carrito
-            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-        </button>
-    </form>
-    </div>
-    
-
-    
-    
-  </header>
-        <!-- Header-->
-        <!-- <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Tienda.html">
+                <img src="./imagenes/logo.png" alt="coleccionasa" width="100em"> Coleccionasa
+            </a>
+            <div class="d-flex align-items-center">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </header> -->
-        <!-- Section-->
- <div class="container-fluid" style="background-color: rgba(235, 235, 235, 0.911);">
+            <div class="d-flex align-items-center">
+                <span class="ml-2 text-white">Siguenos en nuestra nueva cuenta de <a
+                        href="https://www.instagram.com/coleccionasa/"><img src="./imagenes/ig.png" width="40em"
+                            alt="Instagram Logo"></a></span>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<body>
+    <script>
+        function toggleFaq(faqId) {
+            var x = document.getElementById(faqId);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
-   <div class="row justify-content-center"> 
-
-                    <section>
-                        <h1 class="text-center mb-4">Nuestra Empresa</h1>
-                        <h2>Nombre, marca y  logotipo</h2>
-                         <h5>Nombre comercial</h5> 
-                             <p> Nuestro nombre comercial es Colecciones y Ventas S.A
-                            *sociedad anónima no es definitivo
-                            </p>
-                            <h5>Marca</h5> 
-                            <p>Nuestro producto principal se llama Coleccionasa,
-                                jugando con la simplicidad de la palabra coleccionar y el
-                                termino S.A. Esto da lugar a una palabra sencilla y familiar,
-                                fácil de entender por los potenciales clientes.
-                                Los producto incluidos bajo esta marca son la página web
-                                principal, una futura aplicación para dispositivos
-                                inteligentes y nuestras redes sociales.
-                                </p>
-                                <h5>Logo
-                                </h5>
-                                <p>Nuestro logo evoca la unión entre lo tradicional y lo
-                                    moderno, representando un lugar de encuentro entre
-                                    coleccionistas de todo tipo. No importa la edad ni lo que
-                                    busques ya que en nuestra web podrás encontrar tu sitio
-                                    y aquello que quieras tanto comprar como vender.
-                                    Esto se representa con un fondo circular con fondo negro
-                                    y franjas mas claras representando un disco d vinilo a la
-                                    vez que se le añade la letra inicial C dotándolo de un tono
-                                    mas moderno, manteniendo el minimalismo en las líneas.</p>
-                                    <h5>Lema</h5>
-                                    <p>Nuestro lema actual engloba la idea de acercar a nuestros
-                                        clientes los productos de colección que busquen tanto
-                                        ofrecer como adquirir de una manera rápida y sencilla
-                                        desde la comodidad de un servicio web y la comodidad de
-                                        su casa.
-                                        Por ello, se enfoca en dos variantes de la misma idea que
-                                        son:
-                                        ¡De la web a casa!
-                                        </p>
-                    </section>
-            
-                    <section>
-                        <h2>Objetivos</h2>
-                        <h5>MISIÓN</h5><p>Nuestro empeño se centra en poner a la
-                            disposición de todo el mundo, la compra o venta de
-                            productos de coleccionismo existente y de un fututo
-                            lanzamiento.</p>
-                        <h5>VISIÓN</h5><p>Queremos ser la compañía líder de los amantes
-                            del coleccionismo, gracias a nuestra capacidad de prever
-                            y satisfacer las necesidades de nuestros clientes.</p>
-                       
-                        <h5>VALORES</h5>
-                        <ul>
-                            <li><strong>INCLUSIVIDAD:</strong>Promover el acceso a coleccionistas
-                                de todos los rincones y niveles de experiencia.</li>
-                            <li><strong>ENTUSIAMO:</strong> Fomentar la pasión por el coleccionismo
-                                y toda la atmósfera que lo rodea.</li>
-                            <li><strong>CULTURA E HISTORIA:</strong> : Favorecer la cultura e historia
-                                que de cada objeto de colección disponible.</li>
-                            <li><strong>AUTENTICIDAD:</strong> : Asegurar la autenticidad de los
-                                productos que se anuncian en nuestro espacio.</li>
-                                <li><strong>LEGALIDAD:</strong> Certificar la procedencia y la legalidad
-                                    de los productos que ponemos a disposición del
-                                    cliente.</li>
-                        </ul>
-                    </section>
-            
-                    <section id="final">
-                        <h2>El producto:
-                            características</h2>
-                            <h5>Lo que nos caracteriza</h5>
-                        <p>La página web que hemos desarrollado ofrece a los
-                            usuarios una plataforma fácil de usar y segura para
-                            comprar y vender artículos de coleccionismo. Este
-                            servicio en línea proporciona a los coleccionistas un
-                            espacio centralizado para explorar, adquirir y
-                            comercializar una amplia variedad de objetos de interés,
-                            desde antigüedades hasta objetos de culto y rarezas.
-                            </p>
-                    </section>
-            
-                  
-                    
+<div class="container-fluid">
+    <div class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Coleccionasa</h1>
+                    <h3>¡De la web a casa!</h3>
+                    <p>Convierte lo extraordinario en cotidiano: ¡Regístrate y navega por un mundo de compras y ventas únicas</p>
+                    <div class="text-center"><a  href="#" class="btn btn-danger">Registrate</a></div>
                 </div>
             </div>
-        </section>
-
-
-
-       
-        <!-- Footer-->
-        <footer class="py-5 bg-dark" style="max-width: 90%; margin: auto; border-radius: 10px; margin-top: 0.2em;">
-            <div class="container"><p class="m-0 text-center text-white">
-                Coleccionasa &copy; |  Todos los derechos reservados | <a href="condiciones.html">Condiciones</a> | <a
-                    href="https://www.instagram.com/coleccionasa/">Instagram</a>
-
-               </p></div>
-        </footer>
+        </div>
+    </div>
 
     
-       
-  </div>
-</div> 
-    <!-- Bootstrap core JS-->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="main-color">Sobre Nosotros</h2>
+                <p>En Coleccionasa, unimos lo tradicional con lo moderno en el mundo del coleccionismo, ofreciendo una plataforma segura y fácil de usar para la compra y venta de objetos coleccionables.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="./imagenes/logo.png" alt="Logo de Coleccionasa"  width="140em" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <section id="values" class="my-5 py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center main-color">Nuestros Valores y Objetivos</h2>
+            <div class="row text-center mt-4">
+                <div class="col-md-4 mb-3">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Inclusividad</h3>
+                    <p class="feature-text">Acceso abierto para coleccionistas de todos los niveles.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h3>Entusiasmo</h3>
+                    <p class="feature-text">Fomentando la pasión por el coleccionismo y su cultura.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <i class="fas fa-book feature-icon"></i>
+                    <h3>Cultura e Historia</h3>
+                    <p class="feature-text">Favoreciendo la cultura e historia detrás de cada objeto coleccionable.</p>
+                </div>
 
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-search-plus feature-icon"></i>
+                    <h3>Autenticidad</h3>
+                    <p class="feature-text">Asegurando la autenticidad de los productos que se anuncian en nuestro espacio.</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <i class="fas fa-certificate feature-icon"></i>
+                    <h3>Legalidad</h3>
+                    <p class="feature-text">Certificando la procedencia y la legalidad de los productos que ponemos a disposición del cliente..</p>
+                </div>
+                <!-- Repetir para otros valores como Autenticidad y Legalidad -->
+            </div>
+        </div>
+    </section>
 
+    <section id="products" class="container my-5">
+        <h2 class="text-center main-color">Nuestros Productos</h2>
+        <p class="text-center">Nuestra plataforma online facilita la compra y venta de una amplia variedad de artículos de coleccionismo de manera totalmente segura, desde antigüedades hasta objetos de culto.</p>
+        <!-- Contenido adicional sobre productos aquí -->
+    </section>
 
+    <section id="testimonials" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-quote">
+                        "Increíble experiencia. Encontré esa pieza que buscaba hace años. ¡Gracias Coleccionasa!" <br> - Ana G.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-quote">
+                        "La variedad de objetos es impresionante. La calidad y autenticidad están garantizadas." <br> - Carlos M.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-quote">
+                        "Servicio al cliente excepcional y entrega rápida. Totalmente recomendado para coleccionistas." <br> - Laura P.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faqs" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="faq-question" onclick="toggleFaq('faq1')">
+                ¿Cómo puedo verificar la autenticidad de un artículo?
+            </div>
+            <div id="faq1" class="faq-answer" style="display:none;">
+                Todos nuestros artículos son verificados por expertos en coleccionismo para garantizar su autenticidad.
+            </div>
+            <div class="faq-question" onclick="toggleFaq('faq2')">
+                ¿Cuál es el tiempo de entrega promedio?
+            </div>
+            <div id="faq2" class="faq-answer" style="display:none;">
+                El tiempo de entrega varía según la ubicación, pero normalmente se completa dentro de 3 a 5 días hábiles.
+            </div>
+            <!-- Agregar más preguntas según sea necesario -->
+        </div>
+    </section>
+</div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Todos los derechos reservados | <a href="condiciones.html">Condiciones</a> | <a
+                    href="https://www.instagram.com/coleccionasa/">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Función para cambiar el estilo del botón y mostrar el mensaje
+        function handleClick(event) {
+          // Verificar si el clic proviene de un botón con la clase .btn-danger
+          if (event.target.classList.contains('btn-danger')) {
+            var button = event.target;
+    
+            // Cambiar estilo del botón
+            button.style.backgroundColor = 'gray';
+            button.style.pointerEvents = 'none'; // Deshabilitar clics adicionales
+    
+            // Mostrar mensaje
+            alert('Esta web es una demostración. Se podrán realizar compras en un futuro.');
+          }
+        }
+    
+        // Agregar un evento de clic al contenedor de botones (delegación de eventos)
+        document.body.addEventListener('click', handleClick);
+        
+      </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
-
-
-
 
 </html>
