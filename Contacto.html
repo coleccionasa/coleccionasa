@@ -31,8 +31,6 @@ t<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-    
     <link rel="stylesheet" href="css/Contacto.css">
     <title>Coleccionasa</title>
 
@@ -107,13 +105,15 @@ t<!DOCTYPE html>
                 <textarea id="mensaje" name="mensaje" rows="4" required class="form-control"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-custom">Enviar</button>
+            <button type="submit" class="btn btn-custom" id="btnSubmit">Enviar</button>
         </form>
     </div>
 
     <script>
         function mensajeAlert(e) {
             e.preventDefault();
+            const btnEnviar = document.querySelector('#btnSubmit');
+            btnEnviar.disabled = true;
             const miAlert = document.getElementById('idcontacto');
             miAlert.innerHTML = "";
 
